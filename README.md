@@ -14,7 +14,7 @@
 
 To open the custom dialog using Xrm.Navigation.openDialog, you will need to specify the name of the dialog as the first parameter of the method, followed by any additional parameters that you want to pass to the dialog.
 
-## 🛠 For example, if you created a custom dialog with the name "My Custom Dialog", you could open the dialog using the following code:
+#### 🛠 For example, if you created a custom dialog with the name "My Custom Dialog", you could open the dialog using the following code:
 
 ```bash
 var dialogOptions = {
