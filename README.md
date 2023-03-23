@@ -43,3 +43,28 @@ Xrm.Navigation.openDialog("My Custom Dialog", dialogOptions, dialogParameters).t
 ```
 
 In this example, the dialogOptions object is used to specify the height and width of the dialog. You can customize these options as needed for your custom dialog.
+
+
+## Confirm Dialog code sample
+
+```bash
+        var confirmDialogOptions = {
+          text: "Are you sure you want to perform this action?",
+          title: "Confirmation",
+          subtitle: "Please confirm your action",
+          confirmButtonLabel: "Yes",
+          cancelButtonLabel: "No"
+        };
+
+        Xrm.Navigation.openConfirmDialog(confirmDialogOptions).then(
+          function (success) {
+              if (success.confirmed) {               
+                 // TODO : implementation
+              } else {
+                  // Do nothing
+              }
+          },
+          function (error) {
+              console.log(error);
+          });
+```
